@@ -44,7 +44,6 @@ const resolvers = {
       const user = await User.create(args);
       //token for the new user
       const token = signToken(user);
-
     // Return the token and new user details
       return { token, user };
     },
